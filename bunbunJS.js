@@ -168,7 +168,7 @@
   });
 
   $(".caramel-click").click(function() { // bind handler for click event
-   var caramelBun = new Bun("Caramel Pecan", "images/CaramelPecanBun.png", "Strawberry and Rhubarb are a classic combination that can't be beat. Inspired by our partnership with local Pennsylvanian farms.", "Milk, eggs, sugar, baking powder, flour, yeast, butter, cinammon, maple syrup, coffee, salt, pecans, vanilla.");
+   var caramelBun = new Bun("Caramel Pecan", "images/CaramelPecanBun.png", "Caramel and pecans are the best invention since sliced bread! So why not try some on top of our delicious cinnamon bread?", "Milk, eggs, sugar, baking powder, flour, yeast, butter, cinammon, maple syrup, coffee, salt, pecans, vanilla.");
    localStorage.setItem("interestedItem", JSON.stringify(caramelBun));
   });
 
