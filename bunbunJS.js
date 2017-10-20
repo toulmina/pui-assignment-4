@@ -29,13 +29,13 @@
   $(document).ready(function(){
 
     /* Parse to see if any products have been stored as added to cart */
-    var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
     var oldItems = [];
+    var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
     console.log (cartItems);
     var totalPrice = 0;
 
     /* Triggered if there are items that have been added to cart */
-    if (cartItems == [] | null | undefined) {
+    if (cartItems == [] || "null" || "undefined") {
 
     } else {
 
