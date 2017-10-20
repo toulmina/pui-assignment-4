@@ -34,7 +34,7 @@
     var totalPrice = 0;
 
     /* Triggered if there are items that have been added to cart */
-    if (cartItems =null) {
+    if (cartItems == null) {
     } else {
             /* Get the length of the object array of items added to cart */
       var numCartItems = cartItems.length;
