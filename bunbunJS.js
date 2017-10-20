@@ -36,7 +36,7 @@
     var totalPrice = 0;
 
     /* Triggered if there are items that have been added to cart */
-    if (cartItems == []) {
+    if (cartItems == [] || null) {
 
     } else {
       /* Get the length of the object array of items added to cart */
