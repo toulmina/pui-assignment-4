@@ -123,7 +123,7 @@
     } else if (this.value == '29.99') {
       /* If the value is 29.99, change text and image to the relevant info and show flavor dropdowns */
       $("#bun-product-image").attr("src", chosenBun.twelveImage);
-      $("#bun-description").text(chosenBun.twelveescription);
+      $("#bun-description").text(chosenBun.twelveDescription);
       $("#dropdown1").show();
       $("#dropdown2").show();
       $("#quantity-selector").show();
