@@ -38,7 +38,7 @@
     /* Triggered if there are items that have been added to cart */
     if (cartItems > 0) {
             /* Get the length of the object array of items added to cart */
-      var numCartItems = Object.keys(cartItems).length;
+      var numCartItems = cartItems.length;
       
       /* Go through every item in the array */
       for (i=0; i<numCartItems; i++) {
