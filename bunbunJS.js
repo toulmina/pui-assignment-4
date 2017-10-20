@@ -29,8 +29,6 @@
   $(document).ready(function(){
 
     /* Parse to see if any products have been stored as added to cart */
-    var oldItems = [];
-    var itemsArray = [];
     var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
     console.log (cartItems);
     var totalPrice = 0;
