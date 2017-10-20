@@ -1,0 +1,565 @@
+    /*standard body properties*/
+    body {
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0 auto;
+        max-width: 85%;
+        color: #5A5A5A;
+    }
+
+    /*default image properties*/
+    img {
+        max-width: 95%;
+    }
+
+/*styling for header items*/
+    #social-icons li{
+        display:inline-block;
+        max-width:15%
+    }
+
+    #social-icons ul{
+        position:relative;
+        float:right;
+        padding-left:85%
+    }
+
+    /*adjusts padding for icon*/
+    #social-icons li:last-of-type{
+        padding-left: 10%;
+    }
+
+    .header{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom:5%;
+    }
+
+    #cart-icon {
+        position:absolute;
+        z-index: 2;
+        right:0;
+        padding-right: 4%;
+        color:hotpink;
+        font-weight: 700;
+    }
+
+    #logo{
+        width:10%;
+        position: absolute;
+        z-index:2;
+        /*z index helps logo float over bar*/
+        margin-top: 3%;
+    }
+
+    .nav{
+        float:right;
+        position: relative;
+        box-shadow: 0px 2px 4px #958585;
+        top: 5%;
+        left: 0;
+        width:100%;
+        margin-bottom: 6%;
+        margin-top: 5%;
+        background-color: rgba(255, 123, 172, 0.27);
+        z-index: 1;
+        /*z index helps logo float over bar*/
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        float: right;
+        padding: 0;
+        display:inline-block;
+        z-index: 0;
+        overflow: hidden;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+    }
+
+    .nav li {
+        float: left;
+        color: #4A4A4A;
+        padding-left: 50px;
+        font-weight: 100;
+        /*adjusts to Roboto Light*/
+    }
+
+    /*adjusts padding for last navigation button*/
+    .nav li:last-of-type{
+        padding-right: 50px;
+    }
+
+    .nav li a {
+        display: block;
+        color: #4A4A4A;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /*pink shadow on hover*/
+    .nav li a:hover {
+        background-color: rgba(255, 123, 172, 0.27);
+    }
+
+    .nav li {
+        display: inline;
+    }
+
+
+/*styling for main page content*/
+
+ /*margins for content under header*/
+    .content-block{
+        margin-left:15%;
+        margin-right:10%;
+    }
+
+    .left-content{
+        float:left;
+        position:relative;
+        max-width:40%;
+        margin-right:0%;
+    }
+
+    #shipping-info{
+        max-width:50%;
+        position: relative;
+        z-index:2;
+        /*allows shipping pic on top of bun image*/
+        padding-top:100%;
+    }
+
+    #bun-image {
+        position:absolute;
+        z-index: 1;
+        /*allows shipping pic on top of bun image*/
+    }
+
+    .right-content{
+        float:right;
+        max-width: 50%;
+        background-color: #EAEAEA;
+        padding-left: 5%;
+        padding-bottom: 3%;
+        padding-right: 5%;
+        padding-top:2%;
+    }
+
+    h1{
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        color: 4A4A4A;
+        font-style: italic;
+        color: rgba(255, 123, 172, 0.50);
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-weight:100;
+    }
+
+    #signature-img{
+        max-width: 45%;
+        position:relative;
+        float:right;
+        position:inline-block;
+    }
+
+    #signature-line {
+        float:right;
+        font-size:12px;
+        font-style: italic;
+        width: 100%;
+        text-align:right;
+    }
+
+    #thumb{
+        width:5%;
+        padding-bottom:4%;
+    }
+
+    #name {
+        width:8%;
+        padding-right:6%;
+        padding-bottom:4%;
+    }
+
+    /*strips links of their formatting to make menu items*/
+    #name a {
+        text-decoration: none;
+        color:#5A5A5A;
+    }
+
+    /*hover element functionality*/
+    #name a:hover {
+        color: rgb(255, 123, 172);
+    }
+
+    #menu-titles {
+        width:100%;
+        display:inline-block;
+        margin-bottom: 3%;
+        margin-top:3%;
+    }
+
+    h2{
+        display:inline;
+        padding-right: 9%;
+        color: rgba(255, 123, 172, 0.50);
+        font-style: italic;
+    }
+
+     u {
+        text-decoration: none;
+        border-bottom: .5px solid #5A5A5A;
+      }
+
+    /*makes anything underneath lose opacity*/
+    #grey-out{
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        z-index:1;
+        /*allows solid popup on top of background*/
+        position:absolute;
+        width:65%;
+        margin-top:15%
+    }
+
+    .popup-block{
+        background-color:#eAeAeA;
+        box-shadow: 0px 2px 4px #958585;
+        position:absolute;
+        z-index:2;
+        /*allows solid popup on top of background*/
+        margin-top:15%;
+        margin-left:0%;
+        width: 50%;
+        padding-left:3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #confirmation-popup {
+       background-color:#eAeAeA;
+        box-shadow: 0px 2px 4px #958585;
+        position:fixed;
+        z-index:2;
+        /*allows solid popup on top of background*/
+        margin-top:20%;
+        margin-left:5%;
+        width: 50%;
+        padding: 3%;
+    }
+
+    #confirmation-popup p {
+       text-align: left;
+    }
+
+    #bun-product-image {
+        width:90%;
+    }
+
+    #left-popup{
+        float:left;
+        position:relative;
+        width:40%;
+        display:block;
+    }
+
+    #right-popup p{
+        text-align: left;
+    }
+
+    #right-popup {
+        width:50%;
+        float:right;
+        position:relative;
+        text-align: left;
+        display:block;
+        padding-right: 3%;
+    }
+
+    #close-button {
+        text-decoration: none;
+        color:#5A5A5A;
+        float:right;
+        padding-right:3%;
+    }
+
+    /*hover element functionality*/
+    #close-button:hover{
+       color:hotpink;
+    }
+
+    /*styling for button to add to cart*/
+    #cart-button{
+        text-align:center;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color:#5A5A5A;
+        border:none;
+        box-shadow: 0px 2px 4px #958585;
+        background-color: rgba(255, 123, 172, 0.27);
+        margin-right: 5%;
+        margin-top:5%;
+        position:relative;
+        float:right;
+    }
+
+     #cart-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        position:relative;
+    }
+
+    #return-button{
+        margin-left:5%;
+        text-decoration:none;
+        text-align:center;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color:#5A5A5A;
+        border:none;
+        box-shadow: 0px 2px 4px #958585;
+        background-color:lightgrey;
+        margin-bottom:5%;
+        position:relative;
+        float:left;
+    }
+
+    /*adds shadows to our main buttons*/
+    #return-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    #flavor-table {
+        margin-top:5%;
+        position:relative;
+        width:80%;
+        margin-left:10%;
+    }
+
+    #flavor {
+        padding-bottom: 4%;
+    }
+
+    #quantity, #price {
+        padding-left: 10%;
+    }
+
+    h5 {
+        display:inline-block;
+    }
+
+    /* styling for our table headers */
+    th {
+        text-align: left;
+        padding-right:10%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+     /*creates a decorative thin line*/
+    #divider-line1 {
+        background-color:lightgrey;
+        color:lightgrey;
+        height:1px;
+        width:100%;
+        margin-top:2%;
+    }
+
+     /*creates a decorative thin line*/
+    #divider-line2 {
+        background-color:lightgrey;
+        color:lightgrey;
+        height:1px;
+        width:100%;
+        top:0; 
+        margin-top:2%;
+    }
+
+     
+     /*checkout button design*/
+    #checkout-button{
+        text-decoration:none;
+        text-align:center;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color:#5A5A5A;
+        border:none;
+        box-shadow: 0px 2px 4px #958585;
+        background-color:rgba(255, 123, 172, 0.27);
+        display:block;
+        float:right;
+        margin-top:10%;
+        margin-bottom: 10%;
+    }
+
+    #checkout-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        position:relative;
+    }
+
+    #go-to-cart {
+        text-decoration:none;
+        text-align:center;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color:#5A5A5A;
+        border:none;
+        box-shadow: 0px 2px 4px #958585;
+        background-color:rgba(255, 123, 172, 0.27);
+        display:block;
+        float:right;
+        margin-right:5%;
+    }
+
+    #cart-headers {
+        width:100%;
+        position:relative; 
+    }
+
+    /* class for inputting dynamic cart content */
+    .cart-holder{
+        display:inline-block;
+        width:100%;
+    }
+
+    #cart-photo {
+        position:relative; 
+        max-width:10%;
+    }
+
+    #flavors-text {
+        position:relative; 
+        margin-top:-25%;
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        color: #4A4A4A;
+        max-width:20%;
+    }
+
+    #quantity-text {
+        position:absolute; 
+        left:51%;
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        color: #4A4A4A;
+    }
+
+    #price-text {
+        position:absolute; 
+        left:61%;
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        color: #4A4A4A;
+    }
+
+    #flavors-text-header {
+        position:relative; 
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color: #4A4A4A;
+    }
+
+    /* button at top of checkout */
+    #top-checkout-button{
+        text-decoration:none;
+        text-align:center;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color:#5A5A5A;
+        border:none;
+        box-shadow: 0px 2px 4px #958585;
+        background-color:rgba(255, 123, 172, 0.27);
+        display:block;
+        float:right;
+        margin-top:2%;
+    }
+
+    #top-checkout-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        position:relative;
+    }
+
+    #quantity-text-header {
+        position:relative; /* */
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color: #4A4A4A;
+        left:30%;
+    }
+
+    #price-text-header {
+        position:relative; /* */
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color: #4A4A4A;
+        left:40%;
+    }
+
+    /* sums of total spend for the customers */
+    #total-table {
+        margin-top:5%;
+        float:right;
+        position:relative;
+        display:block;
+    }
+
+    #total-row {
+        margin-top: 5%;
+        margin-bottom: -20%;
+    }
+
+    #total-price {
+        margin-bottom: 10%;
+    }
+
+    h6 {
+        text-decoration: none;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        color: #4A4A4A;
+        margin-top: 20%;
+    }
+
+    /* button to get rid of an item from cart */
+    .remove-item {
+        float:right;
+        position:relative; /* */
+        margin-top: 2%;
+        text-decoration:none;
+        text-align:center;
+        font-size:14px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        color:#5A5A5A;
+        border:none;
+        box-shadow: 0px 2px 4px #958585;
+        background-color:lightgrey;
+    }
+
+    .remove-item:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }

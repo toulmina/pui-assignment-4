@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+            <meta charset="utf-8">
+            <title>Welcome to Bun Bun Bake Shop!</title>
+            <meta name="description" content="The home of Pittsburgh's best cinnamon rolls.">
+            
+            <!--Import JQuery -->
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+            <!--Link to Javascript file -->
+            <script type="text/javascript" src="bunbunJS.js"></script>
+            
+            <!-- style -->
+            <link rel="stylesheet" href="bunbuncss.css">
+    </head>
+        
+    <body> 
+            <div class=header>
+            <!-- header includes social icons, logo and navbar -->
+
+                 <div id=social-icons>
+                <!-- list of social media icons -->
+                    
+                    <ul>
+                        <li><a href="www.youtube.com">
+                        <img src="images/YouTubeIcon.png" alt="YouTube Icon"></a> </li>
+                        <li><a href="www.facebook.com">
+                        <img src="images/FacebookIcon.png" alt="Facebook Icon"></a></li>
+                        <li><a href="www.twitter.com">
+                        <img src="images/TwitterIcon.png" alt="Twitter Icon"></a></li>
+                        <li><a href="bunbuncartpage.html">
+                        <img src="images/shoppingcart.png" alt="Shopping Cart Icon"></a></li>
+                    </ul>  
+                </div>
+
+                <!-- placeholder for cart icon counter -->
+                <div id = cart-icon>
+                </div>
+                
+                <!-- logo for shop -->
+                <div id = logo> 
+                    <img src="images/bunbunlogo.png" alt="Logo with a bun">
+                </div>    
+            
+
+                <!-- navigation bar -->
+                <div class = "nav">   
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="bunbunmenu.html">Menu</a></li>
+                        <li><a href="bunbuncartpage.html">Order Online</a></li>
+                    </ul>            
+                </div>   
+            </div>
+
+            <!-- content block for every site (margins, etc) -->
+            <div class = content-block>
+        
+                 <h2>Your Shopping Cart</h2>
+                 
+                <!-- divider line -->
+                 <div id=divider-line1>.</div>
+
+                    <!-- checkout button at top of page -->
+                    <button id=top-checkout-button>Checkout</button>
+                
+                        <!-- headers for shopping cart -->
+                        <div id=cart-headers>
+                            <h5 id=flavors-text-header>Item Details and Flavors</h5>
+                            <h5 id=quantity-text-header>Quantity</h5>
+                            <h5 id=price-text-header>Price</h5>
+                         </div>
+
+                        <div class=cart-container>
+
+                            <!-- div for adding new cart items to -->
+                             <div class =cart-holder>                          
+                              </div>
+                        </div>
+
+                        <!-- table for calculating total cost -->
+                        <div id=total-table>
+
+                            <!-- second divider line -->
+                              <div id=divider-line2>.
+                              </div>
+                                
+                                <h4 id= total-row>Total</h4>
+                                <h6 id=total-price>$0.00</h6>
+                                <button id=checkout-button>Checkout</button>
+
+                                <!-- second divider line -->
+                                <div id=divider-line2>.</div>
+                        </div>
+            </div> 
+    </body>
+    <!-- Image attribution:
+        
+            BaconBun.png = https://www.pillsbury.com/products/cinnamon-rolls/cinnamon-rolls-with-icing
+            BirthdayCAkeBun.png = https://www.bettycrocker.com/recipes/birthday-cake-cinnamon-rolls/64ecca59-9efa-45d6-8602-5eb5cb36c8c3
+            BlackberryBun.png = https://theseasidebaker.com/blackberry-cinnamon-rolls/
+            CaramelPecanBun.png = https://www.rhodesbread.com/blog/blog/microwave-caramel-pecan-cinnamon-rolls
+            CarrotCakeBun.png = http://www.foodnetwork.com/recipes/food-network-kitchen/carrot-cake-jelly-roll-3577688?soc=sharepin
+            CranberryBun.png = http://gilbertsgoodies.net/cgi-sys/suspendedpage.cgi
+            HomePageBunImage.png = http://www.mkunigroup.com/tag/%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B9%80%E0%B8%9A%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88/
+            LemonLavenderBun.png = https://i0.wp.com/thesavvysweetpotato.com/wp-content/uploads/2017/04/fullsizeoutput_28b5.jpeg
+            MapleApplePecanBun.png = http://bakingdom.com/2011/11/maple-pecan-cinnamon-rolls.html
+            OldFasionedBun.png = https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=17&cad=rja&uact=8&ved=0ahUKEwi5os-zhf7WAhXJDsAKHaQ5AbcQFghfMBA&url=https%3A%2F%2Fwww.yelp.com%2Fbiz_photos%2Fjohns-incredible-pizza-company-las-vegas-2&usg=AOvVaw2cFyRGwfCkIO0Iyf79I432
+            OriginalBun.png = https://bookwai.ga/documentation/amazon-e-books-collections-slim-eating-indulgent-baked-treats-skinny-recipes-for-fat-loss-and-a-flat-belly-by-slim-eating-rtf.html
+            PumpkinSpiceBun.png = http://i.ytimg.com/vi/wbgIsVdwip0/maxresdefault.jpg
+            SixOriginalBun.png = https://bookwai.ga/documentation/amazon-e-books-collections-slim-eating-indulgent-baked-treats-skinny-recipes-for-fat-loss-and-a-flat-belly-by-slim-eating-rtf.html
+            StrawberryRhubarbBun.png = https://lifemadesweeter.com/wp-content/uploads/Strawberry-Cinnamon-Rolls-Photo-Recipe-Picture-1-7-e1497096365873.jpg
+            TwelveOriginalBun.png = https://bookwai.ga/documentation/amazon-e-books-collections-slim-eating-indulgent-baked-treats-skinny-recipes-for-fat-loss-and-a-flat-belly-by-slim-eating-rtf.html
+            WalnutBun.png = http://www.finecooking.com/recipe/cinnamon-raisin-walnut-pinwheels
+
+    -->
+
+</html>
+
