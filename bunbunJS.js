@@ -1,15 +1,15 @@
   /*** Object Constructors ***/
   
   /* Bun object */
-  function Bun(name, image, description, ingredients, siximage, sixdescription, twelveimage, twelvedescription) {
+  function Bun(name, image, description, ingredients, sixImage, sixDescription, twelveImage, twelveDescription) {
     this.name = name;
     this.image = image;
     this.description = description;
     this.ingredients = ingredients;
-    this.siximage = siximage;
-    this.sixdescription = sixdescription;
-    this.twelveimage = twelveimage;
-    this.twelvedescription = twelvedescription;
+    this.sixImage = sixImage;
+    this.sixDescription = sixDescription;
+    this.twelveImage = twelveImage;
+    this.twelveDescription = twelveDescription;
   }
 
   /* Product object */
@@ -30,13 +30,17 @@
 
     /* Parse to see if any products have been stored as added to cart */
     var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
-
-    /* Get the length of the object array of items added to cart */
-    var numCartItems = Object.keys(cartItems).length;
+    console.log (cartItems);
     var totalPrice = 0;
 
     /* Triggered if there are items that have been added to cart */
-    if (numCartItems > 0) {
+    if (cartItems == []) {
+
+    } else {
+
+      /* Get the length of the object array of items added to cart */
+      var numCartItems = Object.keys(cartItems).length;
+      
       /* Go through every item in the array */
       for (i=0; i<numCartItems; i++) {
 
@@ -95,9 +99,9 @@
   /* Only run this if there is an interested item */
   if (chosenBun == null) {
   } else {
-
     /* Replace the relevant text and images with bun-specific information */
     $("#bun-name").text(chosenBun.name);
+    console.log(chosenBun);
     $("#bun-product-image").attr("src", chosenBun.image);
     $("#bun-description").text(chosenBun.description);
     $("#bun-ingredients").text(chosenBun.ingredients);
@@ -107,22 +111,22 @@
   $("input[name='options']").change(function(){
     if (this.value == '3.99') {
       /* If the value is 3.99, change text and image to the relevant info and continue to hide flavor dropdowns */
-      $("#bunproductimage").attr("src", chosenBun.image);
-      $("#bundescription").text(chosenBun.description);
+      $("#bun-product-image").attr("src", chosenBun.image);
+      $("#bun-description").text(chosenBun.description);
       $("#dropdown1").hide();
       $("#dropdown2").hide();
       $("#quantity-selector").show();
     } else if (this.value == '19.99') {
       /* If the value is 19.99, change text and image to the relevant info and show flavor dropdowns */
-      $("#bunproductimage").attr("src", chosenBun.siximage);
-      $("#bundescription").text(chosenBun.sixdescription);
+      $("#bun-product-image").attr("src", chosenBun.sixImage);
+      $("#bun-description").text(chosenBun.sixDescription);
       $("#dropdown1").show();
       $("#dropdown2").show();
       $("#quantity-selector").show();
     } else if (this.value == '29.99') {
       /* If the value is 29.99, change text and image to the relevant info and show flavor dropdowns */
-      $("#bunproductimage").attr("src", chosenBun.twelveimage);
-      $("#bundescription").text(chosenBun.twelvedescription);
+      $("#bun-product-image").attr("src", chosenBun.twelveImage);
+      $("#bun-description").text(chosenBun.twelveescription);
       $("#dropdown1").show();
       $("#dropdown2").show();
       $("#quantity-selector").show();
