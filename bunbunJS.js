@@ -36,10 +36,8 @@
     var totalPrice = 0;
 
     /* Triggered if there are items that have been added to cart */
-    if (cartItems == [] || null) {
-
-    } else {
-      /* Get the length of the object array of items added to cart */
+    if (cartItems > 0) {
+            /* Get the length of the object array of items added to cart */
       var numCartItems = Object.keys(cartItems).length;
       
       /* Go through every item in the array */
@@ -71,6 +69,8 @@
         totalPrice += parseFloat(cartItems[i].sumPrice);
       }   
       $("#total-price").text("$" + totalPrice);
+
+    } else {
     }
 
   /* Triggered when someone clicks the remove item button */
