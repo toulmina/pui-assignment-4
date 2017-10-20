@@ -32,11 +32,13 @@
     var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
     console.log (cartItems);
     var totalPrice = 0;
+    var totalQuantity = "";
 
     /* Triggered if there are items that have been added to cart */
     if (cartItems == null) {
+      console.log("null");
     } else {
-            /* Get the length of the object array of items added to cart */
+      /* Get the length of the object array of items added to cart */
       var numCartItems = cartItems.length;
       console.log(numCartItems);
       
@@ -59,16 +61,24 @@
         $(".cart-holder").append('<h5 id=price-text> $' + cartItems[i].sumPrice + '</h5>');
         /* Assign an id to the remove button, corresponding to the position in the array */
         $(".cart-holder").append('<button class=remove-item id=' + [i] +'> Remove </button>' + "<br><br><br><br>");
-
-        /* Counter for shopping cart item */
-        $("#cart-icon").text(numCartItems);
       }   
 
-      /* For every cart item, add prices together for total price */
+      /* For every cart item, add quantities together for total quantity */
+      for (i=0; i<numCartItems; i++) {
+        totalQuantity += parseFloat(cartItems[i].quantity);
+      }   
+      $("#cart-icon").text("$" + totalQuantity);
+    
+     /* For every cart item, add prices together for total price */
       for (i=0; i<numCartItems; i++) {
         totalPrice += parseFloat(cartItems[i].sumPrice);
       }   
       $("#total-price").text("$" + totalPrice);
+
+ /* Counter for shopping cart item */
+        $("#cart-icon").text(numCartItems);
+
+
 
     } 
 
@@ -101,7 +111,6 @@
   } else {
     /* Replace the relevant text and images with bun-specific information */
     $("#bun-name").text(chosenBun.name);
-    console.log(chosenBun);
     $("#bun-product-image").attr("src", chosenBun.image);
     $("#bun-description").text(chosenBun.description);
     $("#bun-ingredients").text(chosenBun.ingredients);
