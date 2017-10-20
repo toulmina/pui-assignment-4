@@ -32,7 +32,6 @@
     var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
     console.log (cartItems);
     var totalPrice = 0;
-    var totalQuantity = "";
 
     /* Triggered if there are items that have been added to cart */
     if (cartItems == null) {
@@ -61,24 +60,16 @@
         $(".cart-holder").append('<h5 id=price-text> $' + cartItems[i].sumPrice + '</h5>');
         /* Assign an id to the remove button, corresponding to the position in the array */
         $(".cart-holder").append('<button class=remove-item id=' + [i] +'> Remove </button>' + "<br><br><br><br>");
+
+        /* Counter for shopping cart item */
+        $("#cart-icon").text(numCartItems);
       }   
 
-      /* For every cart item, add quantities together for total quantity */
-      for (i=0; i<numCartItems; i++) {
-        totalQuantity += parseFloat(cartItems[i].quantity);
-      } 
-
-       /* Counter for shopping cart icon */
-      $("#cart-icon").text("$" + totalQuantity);
-      console.log(totalQuantity);
-    
-     /* For every cart item, add prices together for total price */
+      /* For every cart item, add prices together for total price */
       for (i=0; i<numCartItems; i++) {
         totalPrice += parseFloat(cartItems[i].sumPrice);
       }   
       $("#total-price").text("$" + totalPrice);
-
-
     } 
 
   /* Triggered when someone clicks the remove item button */
