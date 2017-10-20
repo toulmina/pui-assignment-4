@@ -66,18 +66,17 @@
       /* For every cart item, add quantities together for total quantity */
       for (i=0; i<numCartItems; i++) {
         totalQuantity += parseFloat(cartItems[i].quantity);
-      }   
+      } 
+
+       /* Counter for shopping cart icon */
       $("#cart-icon").text("$" + totalQuantity);
+      console.log(totalQuantity);
     
      /* For every cart item, add prices together for total price */
       for (i=0; i<numCartItems; i++) {
         totalPrice += parseFloat(cartItems[i].sumPrice);
       }   
       $("#total-price").text("$" + totalPrice);
-
- /* Counter for shopping cart item */
-        $("#cart-icon").text(numCartItems);
-
 
 
     } 
