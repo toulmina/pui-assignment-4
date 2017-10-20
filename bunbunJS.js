@@ -30,7 +30,6 @@
 
     /* Parse to see if any products have been stored as added to cart */
     var cartItems = JSON.parse(localStorage.getItem("itemsArray"));
-    console.log (cartItems);
     var totalPrice = 0;
 
     /* Triggered if there are items that have been added to cart */
@@ -39,7 +38,6 @@
     } else {
       /* Get the length of the object array of items added to cart */
       var numCartItems = cartItems.length;
-      console.log(numCartItems);
       
       /* Go through every item in the array */
       for (i=0; i<numCartItems; i++) {
