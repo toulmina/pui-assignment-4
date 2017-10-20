@@ -37,7 +37,7 @@
     if (cartItems > 0) {
             /* Get the length of the object array of items added to cart */
       var numCartItems = cartItems.length;
-      conole.log(numCartItems);
+      console.log(numCartItems);
       
       /* Go through every item in the array */
       for (i=0; i<numCartItems; i++) {
