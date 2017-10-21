@@ -67,7 +67,7 @@
       for (i=0; i<numCartItems; i++) {
         totalPrice += parseFloat(cartItems[i].sumPrice);
       }   
-      $("#total-price").text("$" + totalPrice);
+      $("#total-price").text("$" + totalPrice.toFixed(2));
     } 
 
   /* Triggered when someone clicks the remove item button */
@@ -221,7 +221,7 @@
        var chosenQuantity = String($('input[type=radio][name=options]:checked').attr('id'));
        var chosenAmount = parseFloat($("#quantity-selector option:selected").val());
        var chosenPrice = parseFloat(radioInput);
-       var chosenSumPrice = chosenPrice * chosenAmount;
+       var chosenSumPrice = (chosenPrice * chosenAmount).toFixed(2);
 
       /* Create a new product with the information obtained above */
        var chosenCartItem = new Product(chosenBun.name, dropdown1Selection, dropdown2Selection, chosenBun.image, chosenPrice, chosenAmount, chosenSumPrice, chosenQuantity);
@@ -233,4 +233,3 @@
      });
 
 });
-
